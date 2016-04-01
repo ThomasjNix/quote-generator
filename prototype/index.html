@@ -1,27 +1,32 @@
 <!--Code created by Thomas Nix-->
-<hmtl lang="en">
+<html lang="en">
   <head>
+
     <meta charset="utf-8"/>
     <title>Quote Generator</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index_style.css"/>
   </head>
 
   <body>
 
+  <a href="index.html"><img id="site_logo" src="img/page_header_img3.png" alt="PageHeader"/></a>
       <header id="site_header">
         <nav id="nav_bar">
-          <a href="index.html"><img src="img/page_header_img.png" alt="PageHeader"/></a>
+
+            <div class="nav_items_div">
           <ul>
             <li class="nav_item"><a href="index.html">Home</a></li>
             <li class="nav_item"><a href="#">About</a></li>
             <li class="nav_item"><a href="#">placeholder</a></li>
             <li class="nav_item"><a href="#">placeholder</a></li>
           </ul>
+            </div>
         </nav>
       </header>
 
     <div id=grid_wrapper>
       <div class="col-0">
+
         <h2>Message from the creator</h2>
         <p>This site was created by an aspiring web developer. Although
           it is not perfect (by any means), it is but a stepping stone in
@@ -30,6 +35,7 @@
         </br></br>Enjoy the site and have a great day :)</p>
       </div>
       <div class="col-1">
+          <div class="col-1_top">
         <div class="dropdown_section">
           <p>Select a source:</p>
           <button value="Any" class="dropdown"/>
@@ -41,21 +47,25 @@
             <li>Example4</li>
             </div>
         </div>
-
         <button id="quote_button">Generate a quote</button>
+          </div>
+          <div id="quote_info">
+            <span>Quote:</span>
+            <span id="quote_area">wordswordswordswordswordswordswordswordswordswordswordswordswordswordswordswordswordswordswordswords(placeholder)</span>
+            <span>Source:</span>
+          </div>
+      </div>
 
-      <div id="quote_info">
-        <span>Quote:</span>
-        <blockquote id="quote_area">wordswordswordswords(placeholder)</blockquote>
-        <span>Source:</span>
-      </div>
-      </div>
-  </div>
-
-    <div class="col-2">
-      <div id="aside_space">
-      </div>
+        <div class="col-2">
+            <div id="aside_space">
+            </div>
+        </div>
     </div>
+
+      <footer class="site_footer">Quote of the day:</br><span class="day_quote">sfdsfdsfdsfd</span></br>
+          <span class="day_quote_source">dsfdsfsdfsdfds</span></footer>
+
+
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/func.js"></script>
