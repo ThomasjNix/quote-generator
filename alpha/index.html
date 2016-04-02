@@ -7,47 +7,56 @@
 
 <body>
     <header>
-        <img src="#"><a href="index.html"></a>
+        <nav class="nav_bar">
+            <ul class="nav_list">
+                <li class="nav_li1">Home</li>
+                <li class="nav_li">About</li>
+                <li class="nav_li">Quotes</li>
+                <li class="nav_li">Contact</li>
+            </ul>
+        </nav>
     </header>
 
-    <nav class="nav_bar">
-        <ul class="nav_list">
-            <li class="nav_li1">Home</li>
-            <li class="nav_li">About</li>
-            <li class="nav_li">Quotes</li>
-            <li class="nav_li">Contact</li>
-        </ul>
-    </nav>
+
 
     <div class="gridcontainer">
         <div class="col-3-12">
             <h2>A message from the creator</h2>
-            <p>LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem
-                LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem
-                LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem</p>
+            <p>This site was created by an aspiring web designer. This is the alpha version of my first real site.
+            Surely there will be some kinks to work out, but thus far I am proud of my product and I hope you enjoy it too :)
+            A mobile version of the site is under development.</p>
         </div>
 
-        <div class="col-6-12 row-1-2">
-            <span>Select an option:</span>
-            <!--A dropdown list will go here-->
-            <button type="submit">Get a Quote</button>
-        </div>
+        <div class="col-6-12">
+            <div class="row-1-2">
+                <span>Select an option:</span>
+                <!--A dropdown list will go here-->
+                <select name="select">
+                    <option>Test</option>
+                    <option>Test2</option>
+                    <option>Test3</option>
+                    <option>Test4</option>
+                </select>
+                <button class="submitbutton" type="submit"><span class="submitbuttonSpan">Submit</span></button>
+            </div>
 
-        <div class="col-6-12 row-2-2">
-            <span>Quote:</span>
-            <blockquote class="genQuote"></blockquote>
-            <span>Source of quote:</span>
-            <span class="quoteSource"></span>
+            <div class="row-2-2">
+                <span>Quote:</span>
+                <blockquote class="genQuote"></blockquote>
+                <span class="quoteSource">Source of quote:</span>
+                <span class="quoteSource" id="quoter"></span>
+
+            </div>
         </div>
 
         <div class="col-3-12">
             <!--This area will have something in it probably-->
         </div>
 
-        <footer>
+        <div class="footer">
             <span>Quote of the day:</br></span>
             <span class="inputQoD"></span>
-        </footer>
+        </div>
 
     </div>
 
