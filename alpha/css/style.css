@@ -103,6 +103,7 @@ div[class^='col-'] {
 .col-6-12 .row-1-2 select {
   margin-left: 2em;
   padding: 0 1em 0 1em;
+  width: 15em;
 }
 
 .col-6-12 .row-2-2 {

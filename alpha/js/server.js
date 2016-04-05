@@ -32,6 +32,9 @@ function onRequest(request, response){
                     case '.jpg':
                         mimeForFile='image/jpeg';
                         break;
+                    case '.json':
+                        mimeForFile='application/json';
+                        break;
                 }
 
             }
