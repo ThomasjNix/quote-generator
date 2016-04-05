@@ -1,0 +1,9 @@
+{
+  "quotes": [
+    {"quote":"abc", "source":"whatever"},
+    {"quote":"def", "source":"whatever2"},
+    {"quote":"ghi", "source":"whatever3"},
+    {"quote":"jkl", "source":"whatever4"}
+
+  ]
+}
