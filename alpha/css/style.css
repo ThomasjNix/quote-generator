@@ -89,11 +89,8 @@ div[class^='col-'] {
   width: 60%;
 }
 
-.col-6-12 .row-1-2, .col-6-12 .row-2-2 {
-  height: 50%;
-}
-
 .col-6-12 .row-1-2 {
+  height: 50%;
   text-align: center;
   padding-top: 10%;
 }
@@ -109,9 +106,12 @@ div[class^='col-'] {
 }
 
 .col-6-12 .row-2-2 {
+  height: 50%;
   text-align: center;
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: -10em;
 }
 
 .col-6-12 .row-2-2 span:first-child {
@@ -162,6 +162,15 @@ div[class^='col-'] {
   text-align: center;
   border-top: 1px solid black;
   background: linear-gradient(to bottom, #dee4e5 0%, #0a0e0a 99%, #6e7774 99%, #000000 100%);
+}
+
+.footer .inputQoD {
+  font-family: verdana, sans-serif;
+  font-style: italic;
+}
+
+.footer .inputQoDSource {
+  color: white;
 }
 
 @keyframes borderDraw1 {

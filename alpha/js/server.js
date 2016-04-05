@@ -13,24 +13,24 @@ function onRequest(request, response){
             var lastDot = request.url.lastIndexOf('.');
             var mimeForFile;
             if (lastDot==-1){
-                mimeForFile='text/plain'
+                mimeForFile='text/plain';
             }else{
                 mimeForFile=request.url.substr(lastDot);
                 switch(mimeForFile){
                     case '.html':
-                        mimeForFile='text/html'
+                        mimeForFile='text/html';
                         break;
                     case '.css':
-                        mimeForFile='text/css'
+                        mimeForFile='text/css';
                         break;
                     case '.js':
-                        mimeForFile='text/javascript'
+                        mimeForFile='text/javascript';
                         break;
                     case '.png':
-                        mimeForFile='image/png'
+                        mimeForFile='image/png';
                         break;
                     case '.jpg':
-                        mimeForFile='image/jpeg'
+                        mimeForFile='image/jpeg';
                         break;
                 }
 
@@ -44,7 +44,7 @@ function onRequest(request, response){
             response.writeHead(404, "Not Found");
             response.end();
         }
-    })
+    });
 }
 
 http.createServer(onRequest).listen(8888);
