@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style_mobile.css">
+    <title>Quote Generator</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav_bar">
+            <ul class="nav_list">
+                <li class="nav_li">Home</li>
+                <li class="nav_li">About</li>
+                <li class="nav_li">Quotes</li>
+                <li class="nav_li">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="message">
+      <h2>A message from the creator</h2>
+      <p>This site was created by an aspiring web designer. This is the alpha version of my first real site.
+      Surely there will be some kinks to work out, but thus far I am proud of my product and I hope you enjoy it too :)
+      A mobile version of the site is under development.</p>
+    </div>
+
+  <div class="quote_items">
+    <span>Select an option:</span>
+    <!--A dropdown list will go here-->
+    <select name="select">
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+    </select>
+    <button class="submitbutton" type="submit"><span class="submitbuttonSpan">Submit</span></button>
+
+    <span class="quote_span">Quote:</span>
+    <blockquote class="genQuote"></blockquote>
+    <span class="quoteSource">Source of quote:</span>
+    <span class="quoteSource" id="quoter"></span>
+  </div>
+    <div class="footer">
+        <span>Quote of the day:</br></span>
+        <span class="inputQoD"></span></br>
+        <span class="inputQoDSource"></span>
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="js/func_m.js"></script>
+    <script type="text/javascript" src="json/quotes.JSON"></script>
+</body>
+</html>
