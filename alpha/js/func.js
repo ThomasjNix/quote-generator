@@ -11,11 +11,6 @@ $(document).ready(function() {
     alert('Selected item: ' + SV);
     });
 
-    //Alert the user of site in development
-    alert("Thank you for visiting! Please note this site is still under development and may" +
-        " have some bugs. Rest assured a lot of coffee is going in to fixing those bugs! I hope you enjoy" +
-        " the site and look forward to future development.");
-
     //This just makes the message from the creator look pretty... :)
       $('.col-3-12').on("mouseenter", function(){
           $(this).css('text-shadow', '0 1em 1.5em lightblue');

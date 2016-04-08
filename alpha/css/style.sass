@@ -12,7 +12,9 @@ html
     margin: 0 15% 0 15%
     padding-left: 0px
     li
-      color: white
+      a
+        text-decoration: none
+        color: white
       &:hover
         animation: borderDraw2 0.5s alternate infinite ease
         cursor: hand
@@ -36,7 +38,7 @@ body
   margin: 0 auto
   display: block
 
-.gridcontainer
+.main_site_back
   box-shadow: $page-shadow
   width: 100%
   height: 75%
@@ -46,78 +48,6 @@ body
   position: relative
   overflow: hidden
   background-color: lighten(#aebcbf, 17%) !important
-
-div[class^='col-']
-  display: block
-  float: left
-  height: 100%
-
-.col-3-12
-  width: 20%
-  &:first-child
-    h2
-      text-align: center
-      font-size: 2.2em
-      font-family: "Century Gothic", sans-serif
-    p
-      font-size: 1.2em
-      font-style: italic
-      font-family: serif
-      text-align: left
-      margin: 1em 1.2em 0 1.2em
-      word-wrap: break-word
-      border-left: 0.5em solid black
-      line-height: 1.8em
-      padding-left: 1em
-
-.col-6-12
-  width: 60%
-  .row-1-2
-    height: 50%
-    text-align: center
-    padding-top: 10%
-    span
-      font-family: verdana, sans-serif
-      font-size: 1.5em
-    select
-      margin-left: 2em
-      padding: 0 1em 0 1em
-      width: 15em
-  .row-2-2
-    height: 50%
-    text-align: center
-    display: flex
-    flex-direction: column
-    position: relative
-    top: -10em
-    span
-      &:first-child
-        margin-bottom: 2em
-        font-size: 2em
-        font-family: Impact
-      &.quoteSource
-        font-family: Georgia, sans-serif
-        font-style: italic
-
-.submitbutton
-  visibility: hidden
-  transition: all 0.5s
-  &:hover
-    transform: scale(1.5)
-  span
-    margin-left: 2em
-    visibility: visible
-    padding: 0.5em 1em
-    border-radius: 2px
-    width: 5em
-    height: 1.5em
-    background-color: lightcyan
-    border: 1px darken(lightcyan, 15%)
-    transition: 0.5s
-    &:active
-      border: 1px lighten(lightcyan, 15%)
-    &:hover
-      box-shadow: 0 0 1em 0.5em white
 
 .footer
   position: absolute
@@ -132,38 +62,3 @@ div[class^='col-']
     font-style: italic
   .inputQoDSource
     color: white
-
-@keyframes borderDraw1
-  0%
-    color: rgba(0,0,0,0.5)
-    text-shadow: none
-  25%
-    color: rgba(64,64,64,.5)
-    text-shadow: 0 0 .1em black
-  50%
-    color: rgba(128,128,128,.5)
-    text-shadow: 0 0 .3em black
-  75%
-    color: rgba(192,192,192,0.5)
-    text-shadow: 0 0 .5em black
-  100%
-    color: rgba(255,255,255,1.0)
-    text-shadow: 0 0 .7em black
-
-@keyframes borderDraw1
-  0%
-    color: rgba(255,255,255,0.5)
-    text-shadow: none
-  25%
-    color: rgba(192,192,192,0.5)
-    text-shadow: 0 0 .1em white
-
-  50%
-    color: rgba(128,128,128,.5)
-    text-shadow: 0 0 .3em white
-  75%
-    color: rgba(64,64,64,.5)
-    text-shadow: 0 0 .5em white
-  100%
-    color: rgba(0,0,0,1.0)
-    text-shadow: 0 0 .7em white
