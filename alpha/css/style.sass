@@ -6,7 +6,7 @@ html
     position: center
 
 .nav_bar
-  background: linear-gradient(45deg, #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%)
+  background: linear-gradient(to bottom, #959595 0%,#0d0d0d 0%,#0d0d0d 4%,#999999 48%,#999999 48%,#4e4e4e 51%,#383838 100%,#1b1b1b 100%)
   ul
     list-style: none
     margin: 0 15% 0 15%
@@ -15,10 +15,6 @@ html
       a
         text-decoration: none
         color: white
-      &:hover
-        animation: borderDraw2 0.5s alternate infinite ease
-        cursor: hand
-        cursor: pointer
       font-size: 2em
       display: inline
       font-family: Georgia, sans-serif
@@ -26,7 +22,7 @@ html
       margin-right: 7.5%
       color: rgba(255,255,255,0.5)
       &:hover
-        animation: borderDraw1 0.5s alternate infinite ease
+        animation: borderDraw1 0.15s ease forwards
         cursor: hand
         cursor: pointer
 
@@ -62,3 +58,10 @@ body
     font-style: italic
   .inputQoDSource
     color: white
+@keyframes borderDraw1
+  from
+    opacity: 1.0
+    text-shadow: none
+  to
+    opacity: 0.5
+    text-shadow: 0 0 3px #FF0000

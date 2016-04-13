@@ -21,7 +21,6 @@
   margin-left: 50%;
   width: 10em;
   height: 10em;
-  border-radius: 100%;
 }
 
 .about_box h1 {
@@ -34,6 +33,7 @@
 }
 
 .about_box p {
+  padding-bottom: 2em;
   font-style: italic;
   font-weight: bold;
   font-family: georgia, sans-serif;
@@ -41,9 +41,17 @@
 }
 
 .about_box span {
-  position: absolute;
-  bottom: 26vh;
-  left: 26vw;
+  position: relative;
+  bottom: 2vh;
+  left: 24vw;
   font-size: 25px;
-  font-family: cursive;
+  font-family: sans-serif;
+  font-size: 1.5em;
+}
+
+.about_box .connect_buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20%;
+  margin-right: 20%;
 }

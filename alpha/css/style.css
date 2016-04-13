@@ -5,7 +5,7 @@ html {
 }
 
 .nav_bar {
-  background: linear-gradient(45deg, #aebcbf 0%, #6e7774 50%, #0a0e0a 51%, #0a0809 100%);
+  background: linear-gradient(to bottom, #959595 0%, #0d0d0d 0%, #0d0d0d 4%, #999999 48%, #999999 48%, #4e4e4e 51%, #383838 100%, #1b1b1b 100%);
 }
 
 .nav_bar ul {
@@ -29,13 +29,7 @@ html {
 }
 
 .nav_bar ul li:hover {
-  animation: borderDraw2 0.5s alternate infinite ease;
-  cursor: hand;
-  cursor: pointer;
-}
-
-.nav_bar ul li:hover {
-  animation: borderDraw1 0.5s alternate infinite ease;
+  animation: borderDraw1 0.15s ease forwards;
   cursor: hand;
   cursor: pointer;
 }
@@ -78,4 +72,15 @@ body {
 
 .footer .inputQoDSource {
   color: white;
+}
+
+@keyframes borderDraw1 {
+  from {
+    opacity: 1.0;
+    text-shadow: none;
+  }
+  to {
+    opacity: 0.5;
+    text-shadow: 0 0 3px #FF0000;
+  }
 }

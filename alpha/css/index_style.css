@@ -75,16 +75,13 @@ div[class^='col-'] {
   font-size: 1.2em;
 }
 
-.submitbutton {
+.cd {
+  visibility: hidden;
+}
+
+.submitbuttonSpan {
   visibility: hidden;
   transition: all 0.5s;
-}
-
-.submitbutton:hover {
-  transform: scale(1.5);
-}
-
-.submitbutton span {
   margin-left: 2em;
   visibility: visible;
   padding: 0.5em 1em;
@@ -96,56 +93,10 @@ div[class^='col-'] {
   transition: 0.5s;
 }
 
-.submitbutton span:active {
-  border: 1px white;
+.submitbuttonSpan:hover {
+  transform: scale(1.5);
 }
 
-.submitbutton span:hover {
+.submitbuttonSpan:hover {
   box-shadow: 0 0 1em 0.5em white;
-}
-
-@keyframes borderDraw1 {
-  0% {
-    color: rgba(0, 0, 0, 0.5);
-    text-shadow: none;
-  }
-  25% {
-    color: rgba(64, 64, 64, 0.5);
-    text-shadow: 0 0 .1em black;
-  }
-  50% {
-    color: rgba(128, 128, 128, 0.5);
-    text-shadow: 0 0 .3em black;
-  }
-  75% {
-    color: rgba(192, 192, 192, 0.5);
-    text-shadow: 0 0 .5em black;
-  }
-  100% {
-    color: white;
-    text-shadow: 0 0 .7em black;
-  }
-}
-
-@keyframes borderDraw1 {
-  0% {
-    color: rgba(255, 255, 255, 0.5);
-    text-shadow: none;
-  }
-  25% {
-    color: rgba(192, 192, 192, 0.5);
-    text-shadow: 0 0 .1em white;
-  }
-  50% {
-    color: rgba(128, 128, 128, 0.5);
-    text-shadow: 0 0 .3em white;
-  }
-  75% {
-    color: rgba(64, 64, 64, 0.5);
-    text-shadow: 0 0 .5em white;
-  }
-  100% {
-    color: black;
-    text-shadow: 0 0 .7em white;
-  }
 }
