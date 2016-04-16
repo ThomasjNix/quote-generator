@@ -37,7 +37,7 @@ body {
   width: 80vw;
   text-align: center;
   margin-left: 10vw;
-  margin-bottom: 10vh;
+  margin-bottom: 4vh;
   border-top: 1px solid black;
   padding-top: 2vh;
 }
@@ -58,11 +58,11 @@ body {
 }
 
 .quote_items .quote_span, .quote_items .quoteSource {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .quote_items .quoteSource {
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 
 .footer {
@@ -73,6 +73,7 @@ body {
   border-top: 1px solid gray;
   width: 100%;
   height: auto;
+  font-weight: bold;
   text-align: center;
 }
 
