@@ -85,12 +85,5 @@ $(document).ready(function() {
       }
     });
   });
-
-  //This just makes the message from the creator look pretty... :)
-    $('.col-3-12').on("mouseenter", function(){
-        $(this).css('text-shadow', '0 1em 1.5em lightblue');
-    }).on("mouseleave", function(){
-        $(this).css('text-shadow', 'none');
-  });
   onLoadRunJSON();
 });
