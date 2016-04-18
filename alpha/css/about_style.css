@@ -19,8 +19,7 @@
   position: relative;
   right: 5em;
   margin-left: 50%;
-  width: 10em;
-  height: 10em;
+  width: 10vw;
 }
 
 .about_box h1 {
@@ -33,7 +32,7 @@
 }
 
 .about_box p {
-  padding-bottom: 2em;
+  padding-bottom: 5vh;
   font-style: italic;
   font-weight: bold;
   font-family: georgia, sans-serif;
