@@ -22,47 +22,11 @@ body {
   padding-left: 0;
 }
 
-.nav_bar .nav_list .nav_li {
-  font-size: 1.6em;
+.nav_bar .nav_list .nav_li, .nav_bar .nav_list a {
+  font-size: 1.3em;
   flex: 1;
   color: white;
-}
-
-.message h2 {
-  text-align: center;
-  font-size: 2em;
-}
-
-.message p {
-  width: 80vw;
-  text-align: center;
-  margin-left: 10vw;
-  margin-bottom: 4vh;
-  border-top: 1px solid black;
-  padding-top: 2vh;
-}
-
-.quote_items {
-  margin-left: 10vw;
-  margin-right: 10vw;
-  display: flex;
-  flex-direction: column;
-}
-
-.quote_items select {
-  margin-bottom: 5vh;
-}
-
-.quote_items button {
-  margin-bottom: 5vh;
-}
-
-.quote_items .quote_span, .quote_items .quoteSource {
-  font-size: 1.2em;
-}
-
-.quote_items .quoteSource {
-  margin-top: 3vh;
+  text-decoration: none;
 }
 
 .footer {

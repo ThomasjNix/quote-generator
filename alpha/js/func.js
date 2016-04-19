@@ -51,7 +51,25 @@ function onLoadRunJSON(){
   });
 }
 
+//This function will switch displays if the screen width is under 800 pixels
+//It successfully navigates to the correct page
+function verifyDisplay(){
+  var path = window.location.pathname;
+  var pathShortened = path.substring(path.indexOf("/")+1, path.lastIndexOf("."));
+  console.log(path);
+  console.log(path.substring(path.indexOf("/")+1, path.lastIndexOf(".")));
+
+  if (screen.width>=800 && pathShortened.substring(pathShortened.length-2, pathShortened.length)=="_m"){
+    window.location=pathShortened.substring(0,pathShortened.length-2)+".html";
+  }
+  if (screen.width<800 && pathShortened.substring(pathShortened.length-2, pathShortened.length)!="_m"){
+    var currentPath=window.location.pathname;
+    window.location=pathShortened + "_m.html";
+  }
+}
+
 $(document).ready(function() {
+  verifyDisplay();
   //Button action for selected option
   $('button').on("click", function(){
     $.getJSON('json/quotes.json', function(data){
@@ -69,6 +87,7 @@ $(document).ready(function() {
             }
           }
       });
+      //Quote of the day generator
       randomSVSelector = Math.floor(Math.random()*(selectedArray.length));
       var currentQuote = selectedArray[randomSVSelector];
       $(".genQuote").text(currentQuote);
