@@ -59,10 +59,10 @@ function verifyDisplay(){
   console.log(path);
   console.log(path.substring(path.indexOf("/")+1, path.lastIndexOf(".")));
 
-  if (screen.width>=800 && pathShortened.substring(pathShortened.length-2, pathShortened.length)=="_m"){
+  if (screen.width>=768 && pathShortened.substring(pathShortened.length-2, pathShortened.length)=="_m"){
     window.location=pathShortened.substring(0,pathShortened.length-2)+".html";
   }
-  if (screen.width<800 && pathShortened.substring(pathShortened.length-2, pathShortened.length)!="_m"){
+  if (screen.width<768 && pathShortened.substring(pathShortened.length-2, pathShortened.length)!="_m"){
     var currentPath=window.location.pathname;
     window.location=pathShortened + "_m.html";
   }

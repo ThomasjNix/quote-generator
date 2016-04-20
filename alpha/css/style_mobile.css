@@ -1,5 +1,7 @@
 html {
-  background-color: lightgrey;
+  background-image: url("../img/mobile_gradient_background.jpg");
+  background-repeat: repeat;
+  background-position: center;
 }
 
 body {
@@ -13,13 +15,13 @@ body {
   width: 99%;
   height: auto;
   border: 2px solid black;
-  background: linear-gradient(45deg, #aebcbf 0%, #6e7774 45%, #0a0e0a 48%, #0a0809 100%);
+  background: linear-gradient(to bottom, #3C88C7 0%, #85C0E8 50%, #89c3eb 51%, #d5ebfb 100%);
 }
 
 .nav_bar .nav_list {
   list-style: none;
   display: flex;
-  padding-left: 0;
+  padding-left: 5%;
 }
 
 .nav_bar .nav_list .nav_li, .nav_bar .nav_list a {
@@ -30,11 +32,11 @@ body {
 }
 
 .footer {
-  background-color: grey;
+  background: linear-gradient(to bottom, #d5ebfb 0%, #89c3eb 49%, #abd3ee 50%, #ebf1f6 100%);
   position: absolute;
   padding-bottom: 0.5vh;
   bottom: 0;
-  border-top: 1px solid gray;
+  border-top: 1px solid #5592BA;
   width: 100%;
   height: auto;
   font-weight: bold;

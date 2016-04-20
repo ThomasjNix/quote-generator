@@ -1,0 +1,49 @@
+.quote_intro {
+  text-align: center;
+  border-bottom: 2px solid grey;
+  padding-bottom: 1vh;
+  width: 80vw;
+  margin: 5vh auto 5vh auto;
+  font-family: Georgia;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.scroll_quotes {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 90vw;
+  margin: 0 auto;
+  height: 50vh;
+  overflow-y: scroll;
+  box-shadow: 0em 0em 4em 1em #FFFFFF;
+  border: 1px solid #BDBDBD;
+  border-radius: 10px;
+}
+
+.scroll_quotes span {
+  padding: 1em 0 1em 2em;
+  border-bottom: 1px solid #D0D0D0;
+  text-align: center;
+  padding-right: 3vh;
+  word-wrap: break-word;
+}
+
+.scroll_quotes span:first-child {
+  padding-top: 2em;
+}
+
+.scroll_quotes::-webkit-scrollbar {
+  background-color: #B9B9B9;
+  box-shadow: inset 0 0 12px 0 black;
+  width: 1em;
+  border-radius: 15px;
+}
+
+.scroll_quotes::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: inset 0 0 8px 0 black;
+}
