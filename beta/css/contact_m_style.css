@@ -1,0 +1,42 @@
+.contact_area {
+  text-align: center;
+}
+
+.contact_area h2 {
+  font-size: 3em;
+  font-family: Georgia, sans-serif;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.contact_area button {
+  width: 40vw;
+  height: 10vh;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 2px 2px black;
+  color: white;
+  font-size: 2em;
+  font-family: Verdana, sans-serif;
+  font-style: italic;
+  background-color: lightblue;
+}
+
+.contact_area .forms {
+  display: flex;
+  flex-direction: column;
+  margin: 6vh 2vw 5vh 2vw;
+}
+
+.contact_area .forms .contact_input {
+  border-radius: 10px;
+  height: 4vh;
+  margin-bottom: 5vh;
+  width: 80vw;
+  align-self: center;
+}
+
+.contact_area .forms .description {
+  border-radius: 10px;
+  height: 10vh !important;
+  margin-bottom: 2vh !important;
+}

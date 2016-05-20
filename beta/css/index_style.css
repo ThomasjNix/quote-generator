@@ -1,0 +1,100 @@
+div[class^='col-'] {
+  display: block;
+  float: left;
+  height: 100%;
+}
+
+.col-3-12 {
+  width: 20%;
+}
+
+.col-3-12:first-child h2 {
+  text-align: center;
+  font-size: 2.2em;
+  font-family: "Century Gothic", sans-serif;
+}
+
+.col-3-12:first-child p {
+  font-size: 1.2em;
+  font-style: italic;
+  font-family: serif;
+  text-align: left;
+  margin: 1em 1.2em 0 1.2em;
+  word-wrap: break-word;
+  border-left: 0.5em solid black;
+  line-height: 1.8em;
+  padding-left: 1vw;
+}
+
+.col-6-12 {
+  width: 60%;
+}
+
+.col-6-12 .row-1-2 {
+  height: 50%;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.col-6-12 .row-1-2 span {
+  font-family: verdana, sans-serif;
+  font-size: 1.5em;
+}
+
+.col-6-12 .row-1-2 select {
+  margin-left: 2vw;
+  padding: 0 1em 0 1em;
+  width: 15em;
+}
+
+.col-6-12 .row-2-2 {
+  height: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -15vh;
+}
+
+.col-6-12 .row-2-2 span:first-child {
+  margin-bottom: 4vh;
+  font-size: 2em;
+  font-family: Impact;
+}
+
+.col-6-12 .row-2-2 span.quoteSource {
+  font-family: Georgia, sans-serif;
+  font-style: italic;
+}
+
+.genQuote {
+  padding-bottom: 2em;
+  font-family: verdana;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.cd {
+  visibility: hidden;
+}
+
+.submitbuttonSpan {
+  visibility: hidden;
+  transition: all 0.5s;
+  margin-left: 2vw;
+  visibility: visible;
+  padding: 0.5em 1em;
+  border-radius: 2px;
+  background-color: lightcyan;
+  border: 1px #94ffff;
+  transition: 0.5s;
+}
+
+.submitbuttonSpan:hover {
+  transform: scale(1.5);
+}
+
+.submitbuttonSpan:hover {
+  box-shadow: 0 0 1em 0.5em white;
+}
