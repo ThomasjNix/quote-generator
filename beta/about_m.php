@@ -1,17 +1,18 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/about_style.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style_mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/about_m_style.css">
     <title>Quote Generator</title>
 </head>
 
 <body>
-    <header>
-        <?php
-        require('includes/navbar.php');
-         ?>
-    </header>
+  <header>
+      <?php
+      require('includes/navbar_m.php')
+       ?>
+  </header>
 
     <div class="main_site_back">
       <div class="about_box">
@@ -29,11 +30,13 @@
       </div>
 
       <?php
-      require('includes/footer.php');
+      require('includes/footer.php')
       ?>
 
-  <?php
-    require('includes/js_includes.php');
-    ?>
+    </div>
+
+    <?php
+      require('includes/js_includes.php');
+     ?>
 
 </body>

@@ -56,15 +56,16 @@ function onLoadRunJSON(){
 function verifyDisplay(){
   var path = window.location.pathname;
   var pathShortened = path.substring(path.indexOf("/")+1, path.lastIndexOf("."));
+  console.log(pathShortened);
   console.log(path);
   console.log(path.substring(path.indexOf("/")+1, path.lastIndexOf(".")));
 
   if (screen.width>=768 && pathShortened.substring(pathShortened.length-2, pathShortened.length)=="_m"){
-    window.location=pathShortened.substring(0,pathShortened.length-2)+".html";
+    window.location=pathShortened.substring(0,pathShortened.length-2)+".php";
   }
   if (screen.width<768 && pathShortened.substring(pathShortened.length-2, pathShortened.length)!="_m"){
     var currentPath=window.location.pathname;
-    window.location=pathShortened + "_m.html";
+    window.location=pathShortened +"_m.php";
   }
 }
 
