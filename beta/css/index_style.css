@@ -5,6 +5,8 @@ div[class^='col-'] {
 }
 
 .col-3-12 {
+  border-right: 1px solid grey;
+  box-shadow: 0 0 20px 15px #313131;
   width: 20%;
 }
 

@@ -1,7 +1,6 @@
 html {
   background-image: url("../img/bg_BWwoodgrain.jpg");
-  background-repeat: repeat;
-  background-position: center;
+  background-repeat: round;
 }
 
 .nav_bar {
